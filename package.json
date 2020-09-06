@@ -1,0 +1,17 @@
+{
+  "name": "platzifood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/css/style.css"
+  },
+  "keywords": [],
+  "author": "Mateo Espinosa <matespinosa09@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.2",
+    "tailwindcss": "^1.8.3"
+  }
+}
