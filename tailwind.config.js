@@ -1,18 +1,14 @@
 module.exports = {
   purge: [],
   theme: {
-    fontFamily: {
-      display: ['Gilroy', 'sans-serif'],
-      body: ['Graphik', 'sans-serif'],
-    },
     extend: {
       colors: {
-        cyan: '#9cdbff',
-      },
+        'primary': '#f3c614',
+        'secundary': '#353535',
+  }
     },
   },
   variants: {
-    opacity: ['responsive', 'hover', 'focus', 'disabled'],
   },
   plugins: [],
 }
