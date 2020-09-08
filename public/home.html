@@ -8,13 +8,17 @@
     <title>header</title>
 </head>
 <body>
-    <nav class="bg-secundary text-gray-100">
+    <nav x-data="{ open: false }" class="fixed z-10 w-full bg-secundary text-gray-100">
         <div class="px-2 bg-secundary text-white flex justify-between items-center">
             <div>
                 <img class="h-8 py-1" src="images/logo-w.svg" alt="">
             </div>
-            <div class="text-2xl">&equiv;</div>
+            <div class="text-2xl cursor-pointer" @click="open = true">&equiv;</div>
         </div>
+
+    <div x-show.transition.duration.600ms="open"
+    @click.away="open = false">
+
         <div class="my-2 mx-2">
             <input class="form-control" type="text" placeholder="Search">
         </div>
@@ -40,6 +44,7 @@
                 <button class="btn btn-primary">Filtrar</button>
             </div>
         </div>
+    </div>
     </nav>
     <!-- MAIN -->
 
@@ -105,5 +110,6 @@
                 </ul>
             </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </body>
 </html>
