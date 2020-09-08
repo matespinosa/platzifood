@@ -614,6 +614,66 @@ video {
   }
 }
 
+.form-control {
+  width: 100%;
+  line-height: 1.375;
+  --text-opacity: 1;
+  color: #2d3748;
+  color: rgba(45, 55, 72, var(--text-opacity));
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  --border-opacity: 1;
+  border-color: #90cdf4;
+  border-color: rgba(144, 205, 244, var(--border-opacity));
+  --bg-opacity: 1;
+  background-color: #edf2f7;
+  background-color: rgba(237, 242, 247, var(--bg-opacity));
+}
+
+.form-control:hover {
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity))
+}
+
+.form-control:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.btn {
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: block;
+  --bg-opacity: 1;
+  background-color: #a0aec0;
+  background-color: rgba(160, 174, 192, var(--bg-opacity))
+}
+
+.btn-primary {
+  --bg-opacity: 1;
+  background-color: #d69e2e;
+  background-color: rgba(214, 158, 46, var(--bg-opacity))
+}
+
+.btn:hover {
+  box-shadow: none;
+  --bg-opacity: 1;
+  background-color: #4a5568;
+  background-color: rgba(74, 85, 104, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity))
+}
+
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -21518,18 +21578,6 @@ video {
           animation: bounce 1s infinite;
 }
 
-.rotate-45 {
-  transform: rotate(45deg);
-}
-
-.zoom {
-  transform: scale(2);
-}
-
-.hover\:zoom:hover {
-  transform: scale(2);
-}
-
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -42395,10 +42443,6 @@ video {
   .sm\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
-  }
-
-  .sm\:rotate-45 {
-    transform: rotate(45deg);
   }
 }
 
@@ -63268,10 +63312,6 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
-
-  .md\:rotate-45 {
-    transform: rotate(45deg);
-  }
 }
 
 @media (min-width: 1024px) {
@@ -84140,10 +84180,6 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
-
-  .lg\:rotate-45 {
-    transform: rotate(45deg);
-  }
 }
 
 @media (min-width: 1280px) {
@@ -105011,9 +105047,5 @@ video {
   .xl\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
-  }
-
-  .xl\:rotate-45 {
-    transform: rotate(45deg);
   }
 }
